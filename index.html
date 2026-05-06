@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ese Glow Diary | Premium Virgin Hair & Luxury Wigs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark-gold: #947438;
+            --rich-black: #0a0a0a;
+            --soft-cream: #fafafa;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--soft-cream);
+            color: var(--rich-black);
+            scroll-behavior: smooth;
+        }
+
+        .serif { font-family: 'Playfair Display', serif; }
+        .logo-font { font-family: 'Cinzel', serif; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: var(--gold); }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1595475207225-428b62bda831?q=80&w=2000&auto=format&fit=crop');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #c5a059 0%, #f9f0d1 50%, #947438 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-luxe {
+            position: relative;
+            background: var(--rich-black);
+            color: white;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            display: inline-block;
+        }
+
+        .btn-luxe:hover {
+            color: var(--rich-black);
+            background: var(--gold);
+        }
+
+        .product-card img {
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .product-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .floating-wa {
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade { animation: fadeIn 1s ease-out forwards; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <a href="https://wa.me/2347070194600" class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full floating-wa hover:scale-110 transition-transform flex items-center gap-2 group">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 whitespace-nowrap font-bold text-sm tracking-widest">ORDER NOW</span>
+    </a>
+
+    <div class="bg-black text-white py-3 px-6 text-[10px] tracking-[0.3em] font-bold text-center uppercase border-b border-white/10">
+        Authentic Luxury • Global Shipping • WhatsApp: 07070194600
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="relative w-12 h-12 flex items-center justify-center border border-gold rounded-full">
+                    <span class="logo-font text-xl text-gold font-bold">E</span>
+                    <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-black border border-gold rounded-full"></div>
+                </div>
+                <div>
+                    <h1 class="logo-font text-2xl font-bold tracking-tighter leading-none">ESE GLOW</h1>
+                    <p class="text-[9px] tracking-[0.4em] font-bold text-gold uppercase">Diary of Beauty</p>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-10 text-[11px] font-bold tracking-widest uppercase">
+                <a href="#home" class="hover:text-gold transition-colors">Home</a>
+                <a href="#collection" class="hover:text-gold transition-colors">The Collection</a>
+                <a href="#about" class="hover:text-gold transition-colors">Our Ethos</a>
+                <a href="#contact" class="hover:text-gold transition-colors">Concierge</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section h-[90vh] flex items-center justify-center text-center text-white px-6">
+        <div class="max-w-4xl animate-fade">
+            <h2 class="serif italic text-2xl md:text-3xl mb-4 font-light">Welcome to the Diary</h2>
+            <h1 class="serif text-5xl md:text-8xl font-bold mb-8 leading-tight">Every Glow <br> Tells a <span class="gold-gradient italic">Secret</span></h1>
+            <p class="max-w-xl mx-auto text-sm md:text-base font-light tracking-widest leading-relaxed mb-12 opacity-80">Discover meticulously sourced luxury hair, curated for the woman who speaks without saying a word.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="#collection" class="btn-luxe px-12 py-5 text-xs font-bold tracking-[0.2em]">EXPLORE SHOP</a>
+                <a href="tel:07070194600" class="border border-white/30 px-12 py-5 text-xs font-bold tracking-[0.2em] hover:bg-white hover:text-black transition-all">CONSULTATION</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div class="max-w-xl">
+                <h2 class="serif text-4xl md:text-5xl font-bold mb-4">Summer Entries</h2>
+                <p class="text-gray-500 text-sm tracking-widest uppercase">Curated Textures • Limited Availability</p>
+            </div>
+            <div class="h-[1px] flex-grow bg-gray-200 mx-8 hidden md:block"></div>
+            <p class="text-xs font-bold tracking-widest border-b-2 border-gold pb-2 cursor-pointer">VIEW ALL PRODUCTS</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
+            <div class="product-card group cursor-pointer">
+                <div class="relative aspect-[4/5] overflow-hidden bg-gray-100 rounded-sm mb-6">
+                    <img src="https://images.unsplash.com/photo-1595475036929-c58f7ad98365?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Bone Straight">
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="serif text-xl font-bold mb-1">Mirror Bone Straight</h4>
+                        <p class="text-[10px] tracking-widest text-gray-400 uppercase">Double Drawn • 28 Inches</p>
+                    </div>
+                    <span class="text-gold font-bold">₦285,000</span>
+                </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+                <div class="relative aspect-[4/5] overflow-hidden bg-gray-100 rounded-sm mb-6">
+                    <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Curly">
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="serif text-xl font-bold mb-1">Sunset Deep Wave</h4>
+                        <p class="text-[10px] tracking-widest text-gray-400 uppercase">HD Lace • 22 Inches</p>
+                    </div>
+                    <span class="text-gold font-bold">₦195,000</span>
+                </div>
+            </div>
+
+            <div class="product-card group cursor-pointer">
+                <div class="relative aspect-[4/5] overflow-hidden bg-gray-100 rounded-sm mb-6">
+                    <img src="https://images.unsplash.com/photo-1620331311520-246422ff82f9?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Bob">
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="serif text-xl font-bold mb-1">Ese Signature Bob</h4>
+                        <p class="text-[10px] tracking-widest text-gray-400 uppercase">Glueless Finish • 12 Inches</p>
+                    </div>
+                    <span class="text-gold font-bold">₦115,000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 text-center bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="serif text-4xl font-bold mb-6">Connect with the Concierge</h2>
+            <div class="p-12 border border-gray-100 bg-white shadow-2xl rounded-lg">
+                <div class="flex flex-col items-center gap-4">
+                    <span class="text-[10px] font-bold tracking-[0.5em] text-gold uppercase mb-2">Private Line</span>
+                    <a href="tel:07070194600" class="serif text-3xl md:text-5xl font-bold">07070194600</a>
+                    <a href="https://wa.me/2347070194600" class="bg-black text-white px-8 py-4 rounded-sm text-[10px] font-bold tracking-widest hover:bg-gold hover:text-black transition-colors">WHATSAPP SHOP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-12 px-6 text-center">
+        <p class="logo-font text-gold text-lg mb-4 tracking-widest">ESE GLOW DIARY</p>
+        <p class="text-[9px] tracking-[0.3em] text-gray-600 uppercase">© 2026 ESE GLOW DIARY. DESIGNED FOR ROYALTY.</p>
+    </footer>
+
+</body>
+</html>
